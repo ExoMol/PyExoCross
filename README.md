@@ -6,6 +6,6 @@ See PyExoCross ***manual*** at [https://pyexocross.readthedocs.io](https://pyexo
 
 See PyExoCross ***published paper*** at [https://doi.org/10.1093/rasti/rzae016](https://doi.org/10.1093/rasti/rzae016).
 
-See PyExoCross ***arXiv preprint*** at [https://arxiv.org/abs/2406.03977](https://arxiv.org/abs/2406.03977).
+See PyExoCross ***arXiv preprint*** (latest version) at [https://arxiv.org/abs/2406.03977](https://arxiv.org/abs/2406.03977).
 
 PyExoCross is the Python version of ExoCross (Fortran 2003 code https://github.com/ExoMol/ExoCross.git).
