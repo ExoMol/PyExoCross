@@ -149,10 +149,12 @@ https://doi.org/10.1093/rasti/rzae016
 
 &#x2705; ExoMol  
 
+&#x2705; ExoMolHR
+
 &#x2705; ExoAtom
 
 &#x2705; HITRAN
 
 &#x2705; HITEMP
 
-&#x23F3; ExoMolHR
+&#x23F3; Databases from VAMDC
