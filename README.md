@@ -90,6 +90,7 @@ Python packages version (see `requirements.txt` for installable bounds; tested o
 | python_version    | 3.8, 3.9, 3.10, 3.11, 3.12 |
 | numpy             | >=1.20, <2.0               |
 | pandas            | >=1.4, <3.0                |
+| pyarrow           | >=10.0, <24.0              |
 | scipy             | >=1.7, <2.0                |
 | numexpr           | >=2.7.0,<3.0.0             |
 | matplotlib        | >=3.5, <4.0                |
@@ -104,8 +105,8 @@ Python packages version (see `requirements.txt` for installable bounds; tested o
 
 PyExoCross now supports selectable compute mode:
 
-- `RunMode CPU` (default)
-- `RunMode GPU` (uses CUDA backend when available)
+- `Device CPU` (default)
+- `Device GPU` (uses CUDA backend when available)
 
 GPU mode is optional and automatically falls back to CPU if CUDA runtime
 packages or devices are unavailable. To keep GPU memory usage bounded, use:
@@ -113,14 +114,15 @@ packages or devices are unavailable. To keep GPU memory usage bounded, use:
 - `GPUBatchLines` (default `8192`)
 - `GPUBatchGrid` (default `256`)
 
-When using API kwargs, the equivalent parameters are `run_mode`,
-`gpu_batch_lines`, and `gpu_batch_grid`.
+When using API kwargs, use `device='CPU'` or `device='GPU'`. \
+`run_mode` kwarg remains supported as a compatibility alias for `device`. \
+Other parameters are `gpu_backend`, `gpu_batch_lines`, and `gpu_batch_grid`.
 
 Runtime packages (optional):
 
-- CUDA: install `cupy` (preferred) or `torch` with CUDA support.
+- CUDA: install `torch` (preferred) or `cupy` with CUDA support.
 
-**Note: macOS MPS GPU cannot use GPU mode because it only uses float32 which lacks precision, so please use Nvidia GPU (CUDA) or use macOS CPU mode instead.**
+**Note: macOS MPS GPU can use GPU mode but it only uses float32 which lacks precision, so please use Nvidia GPU (CUDA) or use macOS CPU mode instead for high precision calculations.**
 
 ### Run PyExoCross program
 
@@ -180,7 +182,7 @@ https://doi.org/10.1093/rasti/rzae016
 
 ```bash
 @article{pyexocross,
-    author   = {Zhang, Jingxin and Tennyson, Jonathan and Yurchenko, Sergei N},
+    author   = {Jingxin Zhang and Jonathan Tennyson and Sergei N. Yurchenko},
     title    = {{PyExoCross: a Python program for generating spectra and cross-sections from molecular line lists}},
     journal  = {RAS Techniques and Instruments},
     volume   = {3},
@@ -192,6 +194,16 @@ https://doi.org/10.1093/rasti/rzae016
     doi      = {10.1093/rasti/rzae016},
     url      = {https://doi.org/10.1093/rasti/rzae016},
     eprint   = {https://academic.oup.com/rasti/article-pdf/3/1/257/61224370/rzae016.pdf},
+}
+
+@article{pyexocross2,
+    author  = {Jingxin Zhang and Sergei N. Yurchenko and Jonathan Tennyson},
+    title   = {{PyExoCross 2.0: A Python Framework for LTE and non-LTE Spectra, Cross Sections, and Spectroscopic Post-processing of Atomic and Molecular Line Lists}},
+    journal = {RAS Techniques and Instruments},
+    volume  = {to be submitted},
+    pages   = {},
+    year    = {2026},
+    doi     = {}
 }
 ```
 
