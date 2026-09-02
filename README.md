@@ -200,7 +200,7 @@ https://doi.org/10.1093/rasti/rzae016
     author  = {Jingxin Zhang and Sergei N. Yurchenko and Jonathan Tennyson},
     title   = {{PyExoCross 2.0: A Python Framework for LTE and non-LTE Spectra, Cross Sections, and Spectroscopic Post-processing of Atomic and Molecular Line Lists}},
     journal = {RAS Techniques and Instruments},
-    volume  = {to be submitted},
+    volume  = {Submitted},
     pages   = {},
     year    = {2026},
     doi     = {}
@@ -209,14 +209,14 @@ https://doi.org/10.1093/rasti/rzae016
 
 ## Support databases
 
-&#x2705; ExoMol  
+&#x2705; ExoMol (High temperature + molecule)
 
-&#x2705; ExoMolHR 
+&#x2705; ExoMolHR (High-resolution + high accuracy + high temperature + molecule)
 
-&#x2705; ExoAtom
+&#x2705; ExoAtom (Including NIST and Kurucz + atom and ion)
 
-&#x2705; HITRAN
+&#x2705; HITRAN (High-resolution + molecule) 
 
-&#x2705; HITEMP
+&#x2705; HITEMP (High temperature + molecule)
 
 &#x23F3; Databases from VAMDC
